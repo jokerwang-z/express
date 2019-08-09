@@ -1,11 +1,5 @@
 'use strict';
 
-/*
- * nodejs-express-mongoose-demo
- * Copyright(c) 2013 Madhusudhan Srinivasa <madhums8@gmail.com>
- * MIT Licensed
- */
-
 /**
  * Module dependencies
  */
@@ -30,7 +24,7 @@ const app = express();
 module.exports = app;
 
 // 引导
-// Bootstrap models (~位运算符非: 取反-1, ~1=-2)
+// Bootstrap models (~位运算符非: 取反-1, ~1=-2), models文件夹下的所有js文件.
 fs.readdirSync(models)
 .filter(file => ~file.search(/^[^.].*\.js$/)) // 返回~0=-1, ~-1=0 => true, false
 .forEach(file => require(join(models, file)));

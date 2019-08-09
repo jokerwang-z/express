@@ -31,6 +31,7 @@ exports.create = async(function*(req, res) {
   user.provider = 'local';
   try {
     yield user.save();
+    // req: IncomingMessage
     req.logIn(user, err => {
       if (err) req.flash('info', 'Sorry! We are not able to log you in!');
       res.redirect('/');

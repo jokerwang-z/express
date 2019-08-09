@@ -5,7 +5,7 @@
  */
 
 const mongoose = require('mongoose');
-const { wrap: async } = require('co');
+const { wrap: async } = require('co'); // promises
 const only = require('only');
 const Article = mongoose.model('Article');
 const assign = Object.assign;

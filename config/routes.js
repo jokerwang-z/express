@@ -9,7 +9,7 @@ const articles = require('../app/controllers/articles');
 const comments = require('../app/controllers/comments');
 const tags = require('../app/controllers/tags');
 const auth = require('./middlewares/authorization');
-// console.log(logger)
+
 /**
  * Route middlewares
  */
@@ -27,7 +27,6 @@ const fail = {
 
 module.exports = function(app, passport) {
   const pauth = passport.authenticate.bind(passport);
-
   // user routes
   app.get('/login', users.login);
   app.get('/signup', users.signup);

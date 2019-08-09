@@ -49,7 +49,6 @@ UserSchema.virtual('password')
  */
 
 // the below 5 validations only apply if you are signing up traditionally
-
 UserSchema.path('name').validate(function(name) {
   if (this.skipValidation()) return true;
   return name.length;
@@ -167,6 +166,11 @@ UserSchema.statics = {
    */
 
   load: function(options, cb) {
+    // options = {
+    //   criteria: { email: email },
+    //   select: 'name username email hashed_password salt'
+    // }
+    // this: Model instance
     options.select = options.select || 'name username';
     return this.findOne(options.criteria)
       .select(options.select)

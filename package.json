@@ -10,10 +10,10 @@
   ],
   "version": "4.0.0",
   "private": false,
-  "author": "Madhusudhan Srinivasa <madhums8@gmail.com> (http://madhums.github.com)",
+  "author": "wang",
   "repository": {
     "type": "git",
-    "url": "https://github.com/madhums/node-express-mongoose-demo.git"
+    "url": "https://github.com/jokerwang-z/express.git"
   },
   "license": "MIT",
   "engines": {

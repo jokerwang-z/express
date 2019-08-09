@@ -16,13 +16,13 @@ const methodOverride = require('method-override'); // Lets you use HTTP verbs su
 // CSRF（Cross-site request forgery），中文名称：跨站请求伪造;
 const csrf = require('csurf'); // 创建用于创建和验证CSRF令牌的中间件
 const cors = require('cors');
-const helmet = require('helmet');
+const helmet = require('helmet'); // 保护Express应用程序,设置HTTP响应头
 const upload = require('multer')(); // Multer is a node.js middleware for handling multipart/form-data
 
 const mongoStore = require('connect-mongo')(session);
-const flash = require('connect-flash'); // 闪存消息存储在会话中
+const flash = require('connect-flash'); // 闪存消息存储在会话中, 依赖session
 
-const helpers = require('view-helpers'); // 为视图提供帮助器方法
+const helpers = require('view-helpers'); // 界面视图，例如渲染mobile页面
 const ultimatePagination = require('ultimate-pagination'); // 通用分页模型生成算法，可用于为任何基于javascript的平台/框架构建UI组件
 const requireHttps = require('./middlewares/require-https');
 const config = require('./');
@@ -76,10 +76,11 @@ module.exports = function(app, passport) {
   });
 
   // bodyParser should be above methodOverride
-  app.use(bodyParser.json());
+  app.use(bodyParser.json()); // {body}
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(upload.single('image'));
   app.use(
+    // {originalMethod}
     methodOverride(function(req) {
       if (req.body && typeof req.body === 'object' && '_method' in req.body) {
         // look in urlencoded POST bodies and delete it
@@ -91,10 +92,16 @@ module.exports = function(app, passport) {
   );
 
   // CookieParser should be above session
-  app.use(cookieParser());
+  app.use(cookieParser()); // {"secret", "cookies", "signedCookies"}
+  // {"sessionStore", "sessionID", "session"}
   app.use(
     session({
-      resave: false, // resave是指每次请求都重新设置session cookie，假设你的cookie是10分钟过期，每次请求都会再设置10分钟
+      cookie: {
+        expires: 1000 * 60 * 60, // 1 hours
+        httpOnly: true,
+      },
+      name: 'sessionid',
+      resave: true, // resave是指每次请求都重新设置session cookie，假设你的cookie是10分钟过期，每次请求都会再设置10分钟
       saveUninitialized: true, // 是否强制将“未初始化”的会话保存到存储区
       secret: pkg.name, // 签署会话ID cookie的秘密 (required)
       // 会话存储的实例，默认为一个MemoryStore的实例, 负载均衡配置 Session，把 Session 保存到数据库里面（session入库）
@@ -105,17 +112,17 @@ module.exports = function(app, passport) {
     })
   );
   // use passport session
-  app.use(passport.initialize());
-  app.use(passport.session());
+  app.use(passport.initialize()); // {_passport}
+  app.use(passport.session()); // {user}
 
   // connect flash for flash messages - should be declared after sessions
-  app.use(flash());
+  app.use(flash()); // {flash}
 
   // should be declared after session and flash
-  app.use(helpers(pkg.name));
+  app.use(helpers(pkg.name)); // {isMobile}
 
   if (env !== 'test') {
-    app.use(csrf());
+    app.use(csrf()); // {"csrfToken"}
 
     // This could be moved to view-helpers :-)
     app.use(function(req, res, next) {
