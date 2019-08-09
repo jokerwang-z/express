@@ -161,6 +161,7 @@ ArticleSchema.statics = {
    */
 
   list: function(options) {
+    console.log(options)
     const criteria = options.criteria || {};
     const page = options.page || 0;
     const limit = options.limit || 30;

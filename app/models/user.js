@@ -179,3 +179,15 @@ UserSchema.statics = {
 };
 
 mongoose.model('User', UserSchema);
+
+
+const TestSchema = new Schema({
+  name: {type: String, default: 'name field'}
+})
+
+const Test = mongoose.model('Test', TestSchema);
+
+const user = new Test({
+  name: '90'
+});
+user.save();
