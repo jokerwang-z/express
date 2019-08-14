@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 
+// 一个简单的node.js模块，用于处理所有应用程序级通知（Apple推送通知、邮件和Facebook帖子）
 const Notifier = require('notifier');
 const pug = require('pug');
 const config = require('../../config');

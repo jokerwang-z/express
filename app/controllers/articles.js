@@ -42,7 +42,6 @@ exports.index = async(function*(req, res) {
 
   const articles = yield Article.list(options);
   const count = yield Article.countDocuments();
-  console.log(res)
   res.render('articles/index', {
     title: 'Articles',
     articles: articles,

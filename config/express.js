@@ -127,7 +127,6 @@ module.exports = function(app, passport) {
 
     // This could be moved to view-helpers :-)
     app.use(function(req, res, next) {
-      console.log(res)
       res.locals.csrf_token = req.csrfToken();
       res.locals.paginate = ultimatePagination.getPaginationModel;
       // totalPages, currentPage, boundaryPagesRange, siblingPagesRange, hidePreviousAndNextPageLinks, hideFirstAndLastPageLinks, hideEllipsis
