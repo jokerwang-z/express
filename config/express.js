@@ -114,20 +114,23 @@ module.exports = function(app, passport) {
   // use passport session
   app.use(passport.initialize()); // {_passport}
   app.use(passport.session()); // {user}
-
   // connect flash for flash messages - should be declared after sessions
   app.use(flash()); // {flash}
-
   // should be declared after session and flash
-  app.use(helpers(pkg.name)); // {isMobile}
+
+  // res.locals['appName', 'title', 'req', 'isActive', 'formatDate', 'formatDatetime'
+  // , 'stripScript', 'createPagination', 'info', 'errors', 'success', 'warning', '*.mobile[view engine]']
+  app.use(helpers(pkg.name));
 
   if (env !== 'test') {
     app.use(csrf()); // {"csrfToken"}
 
     // This could be moved to view-helpers :-)
     app.use(function(req, res, next) {
+      console.log(res)
       res.locals.csrf_token = req.csrfToken();
       res.locals.paginate = ultimatePagination.getPaginationModel;
+      // totalPages, currentPage, boundaryPagesRange, siblingPagesRange, hidePreviousAndNextPageLinks, hideFirstAndLastPageLinks, hideEllipsis
       next();
     });
   }

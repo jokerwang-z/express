@@ -20,7 +20,8 @@ block content
               a.tag(href="/tags/"+tag)= tag
               | &nbsp;&nbsp;
 
-        p.text-muted= formatDate(article.createdAt, "%b %d, %Y at %I:%M %p")
+        //- p.text-muted= formatDate(article.createdAt, "%b %d, %Y at %I:%M %p")
+        p.text-muted= formatDatetime(article.createdAt, "%b %d, %Y at %I:%M %p")
 
     .col-md-4
       - if (!article.isNew && article.image && article.image.files && article.image.files.length)

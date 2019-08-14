@@ -6,7 +6,7 @@
 
 const mongoose = require('mongoose');
 const { wrap: async } = require('co'); // promises
-const only = require('only');
+const only = require('only'); // 过滤多余的项
 const Article = mongoose.model('Article');
 const assign = Object.assign;
 
@@ -29,9 +29,10 @@ exports.load = async(function*(req, res, next, id) {
  */
 
 exports.index = async(function*(req, res) {
+  // 当page<=1时，page = 0; 否则page--;
   const page = (req.query.page > 0 ? req.query.page : 1) - 1;
   const _id = req.query.item;
-  const limit = 15;
+  const limit = 1;
   const options = {
     limit: limit,
     page: page
@@ -41,7 +42,7 @@ exports.index = async(function*(req, res) {
 
   const articles = yield Article.list(options);
   const count = yield Article.countDocuments();
-
+  console.log(res)
   res.render('articles/index', {
     title: 'Articles',
     articles: articles,

@@ -25,6 +25,7 @@ module.exports = new LocalStrategy(
     User.load(options, function(err, user) {
       if (err) return done(err);
       if (!user) {
+        // 数据库没有该用户user=null;
         return done(null, false, { message: 'Unknown user' });
       }
       if (!user.authenticate(password)) {

@@ -7,6 +7,7 @@
 const port = process.env.PORT || 3000;
 
 module.exports = {
+  // mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[database][?options]]
   db: process.env.MONGODB_URL || 'mongodb://localhost/noobjs_dev',
   twitter: {
     clientID: process.env.TWITTER_CLIENTID,

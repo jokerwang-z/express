@@ -5,7 +5,7 @@
  */
 
 exports.requiresLogin = function(req, res, next) {
-  // isAuthenticated: passport中间件方法
+  // isAuthenticated: passport中间件方法, 测试请求是否经过身份验证 req['user']是否存在
   if (req.isAuthenticated()) return next();
   if (req.method == 'GET') req.session.returnTo = req.originalUrl;
   res.redirect('/login');

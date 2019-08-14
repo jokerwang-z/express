@@ -63,8 +63,8 @@ UserSchema.path('email').validate(function(email) {
   return new Promise(resolve => {
     const User = mongoose.model('User');
     if (this.skipValidation()) return resolve(true);
-
     // Check only when it is a new user or when email field is modified
+    // isNew: 用于指定文档是否为新文档的布尔标志。
     if (this.isNew || this.isModified('email')) {
       User.find({ email }).exec((err, users) => resolve(!err && !users.length));
     } else resolve(true);
@@ -179,15 +179,3 @@ UserSchema.statics = {
 };
 
 mongoose.model('User', UserSchema);
-
-
-const TestSchema = new Schema({
-  name: {type: String, default: 'name field'}
-})
-
-const Test = mongoose.model('Test', TestSchema);
-
-const user = new Test({
-  name: '90'
-});
-user.save();

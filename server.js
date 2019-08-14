@@ -49,5 +49,8 @@ function connect() {
     .on('error', console.log)
     .on('disconnected', connect)
     .once('open', listen);
-  return mongoose.connect(config.db, { keepAlive: 1, useNewUrlParser: true });
+  
+  const _mon = mongoose.connect(config.db, { keepAlive: 1, useNewUrlParser: true }, function (err, conn) { // NativeConnection
+  });
+  return _mon;
 }

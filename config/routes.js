@@ -34,7 +34,7 @@ module.exports = function(app, passport) {
   app.post('/users', users.create);
   app.post(
     '/users/session',
-    pauth('local', {
+    pauth('local', { // 使用LocalStrategy验证，passport/local.js
       failureRedirect: '/login',
       failureFlash: 'Invalid email or password.'
     }),
