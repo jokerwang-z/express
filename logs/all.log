@@ -854,3 +854,82 @@
 [2019-08-14 18:03:23] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5 [32m200[0m 177.046 ms
 [2019-08-14 18:03:44] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5 [32m200[0m 245.945 ms
 [2019-08-14 18:03:49] [33mhttp[39m: GET / [36m304[0m 146.601 ms
+[2019-08-15 09:39:25] [33mhttp[39m: GET / [32m200[0m 237.331 ms
+[2019-08-15 09:39:36] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5 [32m200[0m 148.926 ms
+[2019-08-15 09:39:45] [33mhttp[39m: POST /articles/5d53d2a418bc35517d2d69d5/comments [36m302[0m 45.260 ms
+[2019-08-15 09:39:45] [33mhttp[39m: GET /login [32m200[0m 110.812 ms
+[2019-08-15 09:39:50] [33mhttp[39m: POST /users/session [36m302[0m 10.150 ms
+[2019-08-15 09:39:50] [33mhttp[39m: GET / [32m200[0m 87.421 ms
+[2019-08-15 09:39:54] [33mhttp[39m: GET /users/5d538203bdff1f4c55318f67 [36m304[0m 44.965 ms
+[2019-08-15 09:39:57] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5 [32m200[0m 77.144 ms
+[2019-08-15 09:40:08] [33mhttp[39m: POST /articles/5d53d2a418bc35517d2d69d5/comments [36m302[0m 473.154 ms
+[2019-08-15 09:40:08] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5 [32m200[0m 75.507 ms
+[2019-08-15 14:29:36] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5/comments [36m302[0m 64.425 ms
+[2019-08-15 14:29:36] [33mhttp[39m: GET /login [32m200[0m 178.305 ms
+[2019-08-15 14:29:39] [33mhttp[39m: GET /favicon.ico [33m404[0m 3.272 ms
+[2019-08-15 14:29:45] [33mhttp[39m: GET /login [32m200[0m 103.660 ms
+[2019-08-15 14:30:01] [33mhttp[39m: POST /users/session [36m302[0m 20.100 ms
+[2019-08-15 14:30:01] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5/comments [36m302[0m 293.807 ms
+[2019-08-15 14:30:01] [33mhttp[39m: GET /articles/5d53d2a418bc35517d2d69d5 [32m200[0m 148.233 ms
+[2019-08-15 14:30:08] [33mhttp[39m: GET /users/5d538203bdff1f4c55318f67 [36m304[0m 71.847 ms
+[2019-08-15 14:30:15] [33mhttp[39m: GET / [36m304[0m 102.157 ms
+[2019-08-15 14:30:17] [33mhttp[39m: GET /?page=2 [32m200[0m 100.069 ms
+[2019-08-15 14:30:18] [33mhttp[39m: GET /?page=3 [32m200[0m 91.567 ms
+[2019-08-15 14:30:19] [33mhttp[39m: GET /?page=4 [32m200[0m 74.590 ms
+[2019-08-15 14:30:32] [33mhttp[39m: GET /logout [36m302[0m 4.926 ms
+[2019-08-15 14:30:32] [33mhttp[39m: GET /login [32m200[0m 58.436 ms
+[2019-08-15 14:30:40] [33mhttp[39m: POST /users/session [36m302[0m 8.179 ms
+[2019-08-15 14:30:40] [33mhttp[39m: GET / [32m200[0m 137.799 ms
+[2019-08-15 14:30:44] [33mhttp[39m: GET /users/5d53c8f518bc35517d2d69d2 [32m200[0m 78.878 ms
+[2019-08-15 14:30:47] [33mhttp[39m: GET /?page=4 [32m200[0m 91.957 ms
+[2019-08-15 14:30:49] [33mhttp[39m: GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 84.759 ms
+[2019-08-15 14:37:23] [33mhttp[39m: GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 557.882 ms
+[2019-08-15 15:13:31] [33mhttp[39m: POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 2153234.764 ms
+[2019-08-15 15:13:33] [33mhttp[39m: POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 2354.382 ms
+[2019-08-15 15:13:34] [33mhttp[39m: GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 212.689 ms
+[2019-08-15 17:17:53] [33mhttp[39m: GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 243.889 ms
+[2019-08-15 17:18:01] [33mhttp[39m: POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 50.408 ms
+[2019-08-15 17:18:01] [33mhttp[39m: GET /login [32m200[0m 128.868 ms
+[2019-08-15 17:18:05] [33mhttp[39m: POST /users/session [36m302[0m 11.974 ms
+[2019-08-15 17:18:05] [33mhttp[39m: GET / [32m200[0m 159.442 ms
+[2019-08-15 17:18:08] [33mhttp[39m: GET /?page=4 [32m200[0m 134.991 ms
+[2019-08-15 17:18:12] [33mhttp[39m: GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 104.159 ms
+[2019-08-15 19:12:16] [33mhttp[39m: ::1 GET / [32m200[0m 210.011 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:12:19] [33mhttp[39m: ::1 GET /favicon.ico [33m404[0m 12.340 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:12:28] [33mhttp[39m: ::1 GET / [36m304[0m 13.220 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:12:32] [33mhttp[39m: ::1 GET /?page=2 [32m200[0m 13.928 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:12:33] [33mhttp[39m: ::1 GET /?page=4 [32m200[0m 10.183 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:12:34] [33mhttp[39m: ::1 GET /users/5d538203bdff1f4c55318f67 [32m200[0m 73.965 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:12:37] [33mhttp[39m: ::1 GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 108.097 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:13:18] [33mhttp[39m: ::1 POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 48.984 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:13:18] [33mhttp[39m: ::1 GET /login [32m200[0m 100.320 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:13:27] [33mhttp[39m: ::1 POST /users/session [36m302[0m 11.425 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:13:27] [33mhttp[39m: ::1 GET / [32m200[0m 19.668 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:13:28] [33mhttp[39m: ::1 GET /?page=4 [32m200[0m 10.004 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:13:29] [33mhttp[39m: ::1 GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 10.641 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:32:15] [33mhttp[39m: ::1 POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 1121671.480 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:32:19] [33mhttp[39m: ::1 POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 3951.854 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:32:19] [33mhttp[39m: ::1 GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 14.922 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:42:50] [33mhttp[39m: ::1 POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 249081.515 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:43:06] [33mhttp[39m: ::1 POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 16533.092 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-15 19:43:06] [33mhttp[39m: ::1 GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 16.931 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:55:45] [33mhttp[39m: ::1 GET / [32m200[0m 199.583 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:55:46] [33mhttp[39m: ::1 GET /favicon.ico [33m404[0m 9.329 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:56:00] [33mhttp[39m: ::1 GET / [32m200[0m 9.380 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:56:04] [33mhttp[39m: ::1 GET /favicon.ico [33m404[0m 3.852 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:58:47] [33mhttp[39m: ::1 GET / [36m304[0m 7.099 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:58:49] [33mhttp[39m: ::1 GET /?page=2 [36m304[0m 6.913 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:58:50] [33mhttp[39m: ::1 GET /?page=3 [32m200[0m 8.014 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:58:51] [33mhttp[39m: ::1 GET /?page=4 [32m200[0m 8.007 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 17:58:52] [33mhttp[39m: ::1 GET /?page=1 [32m200[0m 8.125 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:01:39] [33mhttp[39m: ::1 GET /?page=1 [36m304[0m 168.345 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:01:43] [33mhttp[39m: ::1 GET /?page=4 [36m304[0m 10.354 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:01:44] [33mhttp[39m: ::1 GET /articles/5d538256bdff1f4c55318f6b [32m200[0m 125.844 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:01:51] [33mhttp[39m: ::1 POST /articles/5d538256bdff1f4c55318f6b/comments [36m302[0m 22.736 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:01:51] [33mhttp[39m: ::1 GET /login [32m200[0m 70.197 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:02:05] [33mhttp[39m: ::1 GET / [36m304[0m 11.605 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:02:06] [33mhttp[39m: ::1 GET /?page=2 [36m304[0m 8.093 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:02:07] [33mhttp[39m: ::1 GET /?page=3 [36m304[0m 8.249 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:02:08] [33mhttp[39m: ::1 GET /?page=4 [36m304[0m 8.565 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-16 18:02:15] [33mhttp[39m: ::1 GET /login [32m200[0m 2.067 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"
+[2019-08-19 09:40:28] [33mhttp[39m: ::1 GET / [36m304[0m 208.084 ms Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36"

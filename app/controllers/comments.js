@@ -23,6 +23,7 @@ exports.load = function(req, res, next, id) {
 
 exports.create = async(function*(req, res) {
   const article = req.article;
+
   yield article.addComment(req.user, req.body);
   res.redirect(`/articles/${article._id}`);
 });

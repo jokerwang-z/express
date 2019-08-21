@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon server.js",
-    "debug": "cross-env NODE_ENV=development nodemon --inspect=localhost:9229 server.js",
+    "debug": "cross-env NODE_ENV=production nodemon --inspect=localhost:9229 server.js",
     "test": "cross-env NODE_ENV=test babel-tape-runner test/test-*.js",
     "pretest": "eslint .",
     "prod": "cross-env NODE_ENV=production pm2-dev start ecosystem.config.js"

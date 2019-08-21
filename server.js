@@ -14,7 +14,7 @@ const passport = require('passport'); // 身份验证中间件
 const config = require('./config');
 
 const models = join(__dirname, 'app/models');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const app = express();
 
 /**

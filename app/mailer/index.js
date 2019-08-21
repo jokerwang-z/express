@@ -41,10 +41,11 @@ module.exports = {
     const author = article.user;
     const user = options.currentUser;
     const notifier = new Notifier(config.notifier);
-
+    console.log('90')
     const obj = {
       to: author.email,
-      from: 'your@product.com',
+      // from: 'your@product.com',
+      from: '1506525912@qq.com',
       subject: user.name + ' added a comment on your article ' + article.title,
       alert: user.name + ' says: "' + options.comment,
       locals: {
